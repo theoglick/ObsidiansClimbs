@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Obsidians Climbs</title>
+    <link href="content/ocstyles.css" rel="stylesheet" type="text/css" />
+    <link href="content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="http://localhost:54108/favicon.ico">
+    <link href="content/fullcalendar.min.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div class="parallax-section-1">
+        <nav class="navbar navbar-custom">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a style="padding-right: 20px;" class="navbar-brand">
+                        <img src="images/ahwhite.png" alt="" style="height: 30px; float: left; margin: -5px 10px 0 -3px;" />
+                        Obsidians Climbs
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="javascript:void(0)" onclick="scrollDown('#mountaineering', 1000)">Mountaineering with the Obsidians</a></li>
+                        <li><a href="javascript:void(0)" onclick="scrollDown('#about-climbs', 1400)">About Our Climbs</a></li>
+                        <li><a href="javascript:void(0)" onclick="scrollDown('#climb-schedule', 1800)">Climb Schedule</a></li>
+                        <li><a href="javascript:void(0)" onclick="scrollDown('#climbing-awards', 2200)">Climbing Awards</a></li>
+                        <li><a href="javascript:void(0)" onclick="scrollDown('#climb-school', 2600)">Climb School</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <div id="obsBrand" style="padding-top: 166px;">
+            <a href="http://obsidians.org">
+                <div class="obs-text">OBSIDIANS</div>
+                <div class="obs-text-sm">Eugene, Oregon</div>
+            </a>
+            <!--<a href="http://obsidians.org"><img src="images/obswhite.png" alt="" style="width: 220px;" /></a>-->
+        </div>
+    </div>
+
+    <container id="mountaineering">
+        <div class="section-container bg1">
+            <div class="section-container-text">
+                <div class="link-section section-header">Mountaineering with the Obsidians</div>
+                <div class="link-section section-text">
+                    <p>The Obsidians sponsor climbs of most major peaks in the Oregon Cascades during each climbing season. Climbs are scheduled for Washington and California peaks less often, but there are several such climbs on the schedule every year. Climbs vary in difficulty from ‘walk-ups’ to technical rock and snow climbs.</p>
+                    <p>Even the easier climbs are still strenuous experiences, often with ascents of several thousand feet on summit day. Persons signing up for climbs must be in good physical condition and be prepared to carry group gear such as ropes or pickets in addition to their own personal climbing and camping gear. Most climbs require two days or longer.</p>
+                    <p>The Obsidians is not a guide service. Participants are expected to have at least basic mountaineering skills, and you may be asked to describe your climbing experience before being allowed on some climbs. Participation in most climbs is limited to those who have completed the Basic Mountaineering class (either the one offered by the Obsidians, or an equivalent course offered by another organization).</p>
+                    <div class="top-link">
+                        <a href="javascript:void(0)" onclick="scrolltoTop(1000)" style="color:#000;"><span class="glyphicon glyphicon-circle-arrow-up"></span> Top</a>
+                        <span class="next-link">
+                            <a href="javascript:void(0)" onclick="scrollDown('#about-climbs', 400)" style="color:#000;">
+                                <span class="glyphicon glyphicon-circle-arrow-down"></span> About Our Climbs
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </container>
+    <container id="about-climbs">
+        <div class="section-container bg2">
+            <div class="section-container-text">
+                <div class="link-section section-header">About Our Climbs</div>
+                <div class="link-section section-text">
+                    <p>
+                        The party size on climbs is limited by several factors, and may vary by trip. Wilderness area restrictions limit the party size to no more than twelve, and many climb leaders
+                        choose to limit the numbers to less than twelve, depending on the route difficulty and other factors.
+                    </p>
+                    <p>All qualified climbers are welcome to climb with us. To sign up for a climb, you must sign up through the on-line sign-up process. Climbs are generally posted about a month before their scheduled dates.</p>
+                    <p><a href="http://www.obsidians.org/onlinesignup/" target="_blank" button type="button" class="btn btn-default" style="font-size: 18px;">On-line trip sign-up</a></p>
+                    <p>The current climbing chairperson is Maryanne Reiter.</p>
+                    <p>You can contact us by emailing <a href="mailto:climbs@obsidians.org">climbs@obsidians.org</a></p>
+                    <div class="top-link">
+                        <a href="javascript:void(0)" onclick="scrolltoTop(1400)" style="color: #000;"><span class="glyphicon glyphicon-circle-arrow-up"></span> Top</a>
+                        <span class="next-link">
+                            <a href="javascript:void(0)" onclick="scrollDown('#climb-schedule', 400)" style="color:#000;">
+                                <span class="glyphicon glyphicon-circle-arrow-down"></span> Climb Schedule
+                            </a>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </container>
+    <container id="climb-schedule">
+        <div class="section-container bg3">
+            <div class="section-container-text">
+                <div class="link-section section-header" style="margin-top: 20px;">Climb Schedule</div><br />
+                <div class="container-fluid" style="width: 100%; margin: auto; font-family: 'Source Sans Pro', sans-serif;">
+                    <div id="calendar"></div>
+                </div>
+                <div class="top-link">
+                    <a href="javascript:void(0)" onclick="scrolltoTop(1800)" style="color: #000;"><span class="glyphicon glyphicon-circle-arrow-up"></span> Top</a>
+                    <span class="next-link">
+                        <a href="javascript:void(0)" onclick="scrollDown('#climbing-awards', 400)" style="color:#000;">
+                            <span class="glyphicon glyphicon-circle-arrow-down"></span> Climbing Awards
+                        </a>
+                    </span>
+                </div>
+                <!--<div class="link-section section-text">
+
+                    <div class="top-link">
+                        <a href="javascript:void(0)" onclick="scrolltoTop(1800)"><span class="glyphicon glyphicon-circle-arrow-up"></span> Top</a>
+                        <span class="next-link">
+                            <a href="javascript:void(0)" onclick="scrollDown('#climbing-awards', 400)" style="color:#000;">
+                                <span class="glyphicon glyphicon-circle-arrow-down"></span> Climbing Awards
+                            </a>
+                        </span>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </container>
+    <container id="climbing-awards">
+        <div class="section-container bg4">
+            <div class="section-container-text">
+                <div class="link-section section-header">Climbing Awards</div>
+                <div class="link-section section-text">
+                    <p>The Obsidians have three climbing awards offered to members:</p>
+                    <p>The Three Peaks Award is presented to members who have successfully reached the summit of all three Sisters on scheduled Obsidian climbs.</p>
+                    <p>
+                        The Ten Peaks Award is presented to members who have reached the summits on Obsidian climbs of the ten major Oregon peaks: Mt. Hood, Mt. Jefferson,
+                        the Three Sisters, Mt. Washington, Three Fingered Jack, Mt. McLoughlin, Mt. Thielsen, and Diamond Peak.
+                    </p>
+                    <p>The Ten Peaks Leader Award is presented to Obsidian members who have led climbs of all Ten Major Peaks listed above.</p>
+                    <div class="top-link">
+                        <a href="javascript:void(0)" onclick="scrolltoTop(2200)" style="color: #000;"><span class="glyphicon glyphicon-circle-arrow-up"></span> Top</a>
+                        <span class="next-link">
+                            <a href="javascript:void(0)" onclick="scrollDown('#climb-school', 400)" style="color:#000;">
+                                <span class="glyphicon glyphicon-circle-arrow-down"></span> Climb School
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </container>
+    <container id="climb-school">
+        <div class="link-section section-header">Climb School</div>
+        <div class="link-section section-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit</b>. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. </p>
+            <p>Sed dignissim lacinia nunc. <b>Praesent mauris</b>. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit</i>. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit</i>. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. </p>
+            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. <i>In scelerisque sem at dolor</i>. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. </p>
+            <p>Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. <b>Ut fringilla</b>. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. <i>Ut fringilla</i>. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. <i>Nunc feugiat mi a tellus consequat imperdiet</i>. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. </p>
+            <p>Integer lacinia sollicitudin massa. <i>Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam</i>. Cras metus. Sed aliquet risus a tortor. <b>Donec lacus nunc, viverra nec, blandit vel, egestas et, augue</b>. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante. Nulla quam. Aenean laoreet. Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede. Ut orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. Sed pretium blandit orci. </p>
+
+            <div class="top-link"><a href="javascript:void(0)" onclick="scrolltoTop(2600)"><span class="glyphicon glyphicon-circle-arrow-up"></span> Top</a></div>
+        </div>
+    </container>
+
+    <script src="scripts/jquery-2.1.3.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/parallax.js" type="text/javascript"></script>
+    <script src="scripts/obsclimbs.js" type="text/javascript"></script>
+    <script src="scripts/moment.min.js" type="text/javascript"></script>
+    <script src="scripts/fullcalendar.min.js" type="text/javascript"></script>
+    <script src="scripts/gcal.js" type="text/javascript"></script>
+    <script src="scripts/calendar.js" type="text/javascript"></script>
+
+    <script>
+        $('.parallax-section-1').parallax({
+            speed: 0.15
+        });
+    </script>
+</body>
+</html>
